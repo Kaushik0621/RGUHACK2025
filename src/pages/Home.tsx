@@ -1,7 +1,6 @@
 import React from 'react';
-import { Home, Truck, Book, Building2, Ban as Bank, Library, Heart, Palmtree, Recycle, FileText } from 'lucide-react';
+import { Home, Truck, Book, Building2, Ban as Bank, Library, Palmtree, Recycle, FileText } from 'lucide-react';
 import CategoryCard from '../components/molecules/CategoryCard';
-import StatCard from '../components/molecules/StatCard';
 
 const categories = [
   { 
@@ -96,12 +95,6 @@ const categories = [
   }
 ];
 
-const stats = [
-  { label: 'Active Services', value: '24', trend: '+3 this week' },
-  { label: 'Community Events', value: '12', trend: 'Coming this month' },
-  { label: 'Service Requests', value: '98%', trend: 'Resolution rate' }
-];
-
 const HomePage: React.FC = () => {
   return (
     <main className="flex-1 pr-[45rem]">
@@ -109,11 +102,11 @@ const HomePage: React.FC = () => {
         <img src="https://www.aberdeencity.gov.uk/sites/default/files/2018-06/web_banner.png" alt="CityHub Banner" className="rounded-xl" />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         {stats.map((stat) => (
           <StatCard key={stat.label} {...stat} />
         ))}
-      </div>
+      </div> */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {categories.map((category) => (
