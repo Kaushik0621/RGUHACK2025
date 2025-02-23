@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/organisms/Header';
 import ChatBot from './components/organisms/ChatBot';
 import HomePage from './pages/Home';
+import Footer from './components/organisms/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           </Routes>
           <ChatBot />
         </div>
+        <Footer />
       </div>
     </Router>
   );
