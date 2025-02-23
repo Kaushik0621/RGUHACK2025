@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send } from 'lucide-react';
+import { Send, X } from 'lucide-react';
 import Button from '../atoms/Button';
 import dummyChatData from '../../data/chatbotDummyData.json'
 import { getLLMResponse, refreshMemory } from '../../services/api';
@@ -92,6 +92,7 @@ const ChatBot: React.FC = () => {
     try {
       await refreshMemory();
       setMessages(initialMessages);
+      setSuggestedQuestions(dummyChatData.map(item => item.title));
       console.log('Memory refreshed successfully');
     } catch (error) {
       console.error('Failed to refresh memory:', error);
@@ -103,9 +104,9 @@ const ChatBot: React.FC = () => {
       <button 
         onClick={handleRefreshMemory} 
         style={{ position: 'absolute', top: 10, right: 10 }} 
-        className="text-red-500"
+        className="text-white"
       >
-        ✖️
+        <X size={44} />
       </button>
 
       <div className="p-[0.63rem] border-b flex items-center justify-between bg-[#452947] text-white">
