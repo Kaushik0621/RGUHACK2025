@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Help with cost of living",
+        "text": [
+            "What benefits and financial advice can I access?",
+            "How do I use the benefits calculator?",
+            "Where can I book a debt or money advice appointment?",
+            "How can I get help completing health-related benefit forms?",
+            "How do I apply for Universal Credit?",
+            "What support is available for carers and disability benefits?",
+            "What benefits are there for children and families?",
+            "How can I get information about pensions?",
+            "How do I apply for housing and council tax benefits?",
+            "What financial help is available for jobseekers or those on a low income?"
+        ]
+    },
+    {
+        "title": "Crisis Support Services",
+        "text": [
+            "How can I apply for the Scottish Welfare Fund?",
+            "Where can I find emergency food locations?",
+            "Where can I donate or access clothing banks?",
+            "How does the Benefits and Money Advice Outreach Program work?",
+            "Where can I get help with housing or homelessness?",
+            "Where can I find job support services?",
+            "How do I contact social work services or report antisocial behavior?"
+        ]
+    },
+    {
+        "title": "Housing Benefit",
+        "text": [
+            "Am I eligible for Housing Benefit?",
+            "What should existing Housing Benefit recipients know?",
+            "Can I get extra financial support with housing?",
+            "What are the qualifying criteria for Housing Benefit?",
+            "Are there special provisions for certain housing situations?",
+            "How do I apply for Housing Benefit?",
+            "What should I do if my circumstances change?",
+            "Can I backdate my Housing Benefit claim?"
+        ]
+    },
+    {
+        "title": "Local Housing Allowance (LHA)",
+        "text": [
+            "What is Local Housing Allowance (LHA)?",
+            "What are the current LHA rates (2025–2026)?",
+            "What were the LHA rates (2020–2024)?",
+            "How do housing benefit changes affect my rent?",
+            "Can rent payments go directly to my landlord?",
+            "Can I claim extra for a non-resident carer?",
+            "What’s the shared room rate for single tenants under 35?",
+            "How often is my LHA reviewed?"
+        ]
+    },
+    {
+        "title": "Scottish Welfare Fund",
+        "text": [
+            "Apply to the Scottish Welfare Fund",
+            "What is the Scottish Welfare Fund?",
+            "Who is eligible for Scottish Welfare Fund grants?",
+            "How do I apply for crisis or community care grants?"
+        ]
+    },
+    {
+        "title": "Emergency Food Collection",
+        "text": [
+            "Times and Places to Collect Emergency Food",
+            "Where can I collect free emergency food in Aberdeen?"
+        ]
+    },
+    {
+        "title": "Social Care and Health",
+        "text": [
+            "Where can I find mental health and wellbeing support?",
+            "What personal and nursing care services are available?",
+            "What community mental health services can I access?",
+            "How do I apply for sheltered housing?",
+            "How do I apply for council housing?"
+        ]
+    },
+    {
+        "title": "Benefits and Advice",
+        "text": [
+            "How do I claim Universal Credit?",
+            "Where can I get benefits advice and support?"
+        ]
+    },
+    {
+        "title": "Council Tax",
+        "text": [
+            "How can I apply for Council Tax Reduction?",
+            "What happens if my Council Tax situation changes?"
+        ]
+    },
+    {
+        "title": "Jobs and Employment",
+        "text": [
+            "Where can I find current job vacancies?",
+            "How do I complete my job application form?"
+        ]
+    }
+]
