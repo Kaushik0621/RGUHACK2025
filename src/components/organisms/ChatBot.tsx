@@ -110,9 +110,16 @@ const ChatBot: React.FC = () => {
       </button>
 
       <div className="p-[0.63rem] border-b flex items-center justify-between bg-[#452947] text-white">
-        <div>
-          <h3 className="font-semibold">CityHub Assistant</h3>
-          <p className="text-sm text-purple-100">Online • Ready to help</p>
+        <div className="flex items-center">
+          <div>
+            <h3 className="font-semibold">CityHub Assistant</h3>
+            <p className="text-sm text-purple-100">Online • Ready to help</p>
+          </div>
+          <img
+            src="https://rguhack.uk/logo.png"
+            alt="CityHub Logo"
+            className="h-10 mr-2 pl-6"
+          />
         </div>
       </div>
 
