@@ -109,6 +109,6 @@ Check out a live demo of the chatbot in action:
 - **Open-source contributors** for Python, Flask, and NLP libraries.
 - **AI community** for continuous improvements in chatbot frameworks.
 - **GitHub Community** for sharing valuable resources and open-source projects.
-- **Developers & Designers** who contributed to building and improving the chatbot.
+- **Developers & Designers** who's designs we have used from open source.
 
 
