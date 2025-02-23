@@ -14,7 +14,6 @@ By leveraging AI-powered interactions, the chatbot not only provides users with 
 - **User Persona Detection**: The chatbot identifies user profiles and tailors responses based on individual needs.
 - **Reference Links**: Every response includes the original source link for users to verify the information.
 - **Geographic Relevance**: The chatbot checks if users fall within Aberdeen's jurisdiction to provide accurate services.
-- **Offline Data Access**: The AI system operates in a closed environment with preloaded council data, ensuring privacy and security.
 - **Scalable Solution**: Designed to be adaptable for other councils or organizations by simply changing the data source.
 
 ---
@@ -25,7 +24,7 @@ By leveraging AI-powered interactions, the chatbot not only provides users with 
 - **Vector Database**: Stores council website data for efficient search and retrieval.
 - **Python & Flask**: Backend framework used to build the chatbot.
 - **Natural Language Processing (NLP)**: Enhances chatbot's understanding of user intents and context.
-- **Security**: Offline setup ensures complete data privacy.
+- **LLM** OPENAI's 4o Model to generate proper responses
 
 ---
 
@@ -55,8 +54,10 @@ By leveraging AI-powered interactions, the chatbot not only provides users with 
 
 - Python 3.x
 - Flask
-- Vector Database Setup
+- Vector Database Setup(Elastic Search)
 - Dependencies listed in `requirements.txt`
+- OpenAI API as LLM
+  
 
 ### Installation
 
