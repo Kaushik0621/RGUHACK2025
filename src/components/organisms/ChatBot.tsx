@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Send, X } from 'lucide-react';
 import Button from '../atoms/Button';
 import dummyChatData from '../../data/chatbotDummyData.json'
@@ -17,6 +17,8 @@ const ChatBot: React.FC = () => {
     { text: "• Finding city services\n• Council tax information\n• Housing assistance\n• Transport updates", isUser: false }
   ]);
   const [input, setInput] = useState('');
+  const [isTyping, setIsTyping] = useState(false);
+  const messagesEndRef = useRef<HTMLDivElement | null>(null);
 
   console.log("message", messages);
   
@@ -26,6 +28,8 @@ const ChatBot: React.FC = () => {
 
     setMessages([...messages, { text: input, isUser: true }]);
     setInput('');
+
+    setIsTyping(true);
 
     setTimeout(async () => {
       try {
@@ -47,6 +51,8 @@ const ChatBot: React.FC = () => {
           text: "Sorry, there was an error processing your request.",
           isUser: false
         }]);
+      } finally {
+        setIsTyping(false);
       }
     }, 1000);
   };
@@ -99,6 +105,12 @@ const ChatBot: React.FC = () => {
     }
   };
 
+  useEffect(() => {
+    if (messagesEndRef.current) {
+      messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [messages]);
+
   return (
     <div className="fixed right-0 top-[120px] bottom-0 w-[700px] bg-white shadow-lg flex flex-col border-l border-gray-200">
       <button 
@@ -140,6 +152,14 @@ const ChatBot: React.FC = () => {
             </div>
           </div>
         ))}
+        {isTyping && (
+          <div className="flex justify-start">
+            <div className="max-w-[80%] rounded-lg p-3 bg-gray-100 text-gray-900 whitespace-pre-line">
+              <TypingIndicator />
+            </div>
+          </div>
+        )}
+        <div ref={messagesEndRef} />
       </div>
 
       <div className="p-4 border-t border-gray-200 bg-gray-50">
@@ -152,12 +172,6 @@ const ChatBot: React.FC = () => {
               size="sm"
               onClick={() => {
                 setMessages([...messages, { text: question, isUser: true }]);
-                // setTimeout(() => {
-                //   setMessages(prev => [...prev, {
-                //     text: "I'll help you with that! Let me find the relevant information...",
-                //     isUser: false
-                //   }]);
-                // }, 1000);
                 handleTitleClick(question)
               }}
             >
@@ -182,6 +196,14 @@ const ChatBot: React.FC = () => {
           </Button>
         </div>
       </div>
+    </div>
+  );
+};
+
+const TypingIndicator = () => {
+  return (
+    <div className="flex items-center">
+      <span className="animate-typing">...</span>
     </div>
   );
 };
